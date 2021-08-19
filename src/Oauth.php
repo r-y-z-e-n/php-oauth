@@ -26,7 +26,7 @@ class Oauth
     }
 
     public function init(){
-        if(empty($this->app_secret) || empty($this->app_id) || empty($this->app_url)){
+        if(empty($this->app_secret) || empty($this->app_id) || empty($this->app_url) || !filter_var($this->app_url,FILTER_VALIDATE_URL)){
             exit('Invalid Configuration Passed');
         }
         $code_from_url  = (isset($_GET['code']) && !empty($_GET['code'])) ? strip_tags($_GET['code']) : '';
