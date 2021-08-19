@@ -1,0 +1,17 @@
+{
+    "name": "ryzen/oauth",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ryzen\\Oauth\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ry-Zen, Inc.",
+            "email": "razoo.choudhary@gmail.com"
+        }
+    ],
+    "require": {}
+}
